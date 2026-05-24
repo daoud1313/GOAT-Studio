@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GOAT Studio — Custom responsive websites built for elite brands. Premium web development & UI/UX design based in Nador, Morocco." />
+  <title>GOAT Studio — We Code the Complex. You Get the Solution.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+   <link rel="stylesheet" href="icon.png">
+
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition active"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="nav__logo"><img src="logo.png" style="width:100px;"></a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"    class="nav__link">Home</a></li>
+      <li><a href="about.html"    class="nav__link">About</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+      <li><a href="contact.html"  class="nav__link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/212600000000" target="_blank" rel="noopener" class="nav__cta">Start Project</a>
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" role="dialog" aria-label="Mobile Navigation">
+    <a href="index.html"     class="nav__link">Home</a>
+    <a href="about.html"     class="nav__link">About</a>
+    <a href="services.html"  class="nav__link">Services</a>
+    <a href="portfolio.html" class="nav__link">Portfolio</a>
+    <a href="contact.html"   class="nav__link">Contact</a>
+    <a href="https://wa.me/212616280527" target="_blank" rel="noopener" class="nav__cta">Start Project</a>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="page-wrap">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__accent-orb" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="label reveal">Studio / Est. 2024</p>
+
+        <h1 class="display-xl hero__headline reveal reveal-delay-1">
+          We Code<br/>
+          the <em class="hero__italic">Complex.</em><br/>
+          <span class="text-accent">You Get</span><br/>
+          the Solution.
+        </h1>
+
+        <p class="body-lead hero__sub reveal reveal-delay-2">
+          Custom responsive websites built for elite brands.<br/>
+          Performance-obsessed. Pixel-perfect. Zero compromise.
+        </p>
+
+        <div class="hero__actions reveal reveal-delay-3">
+          <a href="https://wa.me/212616280527" target="_blank" rel="noopener" class="btn btn--primary">
+            Start a Project
+            <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="portfolio.html" class="btn btn--outline">View Portfolio</a>
+        </div>
+
+        <div class="hero__stats reveal reveal-delay-4">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-target="48" data-suffix="+">0+</span>
+            <span class="hero__stat-label">Projects Delivered</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-target="100" data-suffix="%">0%</span>
+            <span class="hero__stat-label">Client Satisfaction</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-target="3" data-suffix="s avg">0s avg</span>
+            <span class="hero__stat-label">Load Time</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Premium Web Dev</span><span class="marquee__dot">·</span>
+        <span>UI/UX Design</span><span class="marquee__dot">·</span>
+        <span>Performance First</span><span class="marquee__dot">·</span>
+        <span>Elite Brands</span><span class="marquee__dot">·</span>
+        <span>Custom Code</span><span class="marquee__dot">·</span>
+        <span>SEO Optimized</span><span class="marquee__dot">·</span>
+        <span>Pixel Perfect</span><span class="marquee__dot">·</span>
+        <span>Premium Web Dev</span><span class="marquee__dot">·</span>
+        <span>UI/UX Design</span><span class="marquee__dot">·</span>
+        <span>Performance First</span><span class="marquee__dot">·</span>
+        <span>Elite Brands</span><span class="marquee__dot">·</span>
+        <span>Custom Code</span><span class="marquee__dot">·</span>
+        <span>SEO Optimized</span><span class="marquee__dot">·</span>
+        <span>Pixel Perfect</span><span class="marquee__dot">·</span>
+      </div>
+    </div>
+
+    <!-- VALUE PROPS -->
+    <section class="section features" aria-label="Why Choose GOAT Studio">
+      <div class="features__top">
+        <p class="label reveal">Why GOAT Studio</p>
+        <h2 class="display-md reveal reveal-delay-1">Built different.<br/>By design.</h2>
+      </div>
+
+      <div class="features__grid">
+
+        <article class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__num">01</div>
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4L34 12V28L20 36L6 28V12L20 4Z" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M20 12V28M12 16L28 24M28 16L12 24" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Blazing Performance</h3>
+          <p class="feature-card__body">
+            Every line of code is hand-crafted for speed. No bloated frameworks, no unnecessary scripts — just clean, optimized code that scores 95+ on Google PageSpeed.
+          </p>
+          <div class="feature-card__line" aria-hidden="true"></div>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__num">02</div>
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M14 32H26M20 28V32" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M11 14H29M11 19H22" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Pixel-Perfect Layouts</h3>
+          <p class="feature-card__body">
+            Obsessive attention to detail. Every margin, every typographic rhythm, every micro-interaction is considered and crafted to reflect your brand's elite status.
+          </p>
+          <div class="feature-card__line" aria-hidden="true"></div>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__num">03</div>
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 20L9 20M31 20H26M20 9V14M20 26V31" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M11.5 11.5L15 15M25 25L28.5 28.5M28.5 11.5L25 15M15 25L11.5 28.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Custom Code Only</h3>
+          <p class="feature-card__body">
+            Zero template shortcuts. Every project starts from a blank canvas, engineered specifically for your vision — giving you a website no competitor can replicate.
+          </p>
+          <div class="feature-card__line" aria-hidden="true"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT CTA STRIP -->
+    <section class="cta-strip section--dark" aria-label="Call to Action">
+      <div class="cta-strip__inner">
+        <div class="cta-strip__text reveal">
+          <p class="label">Ready to elevate?</p>
+          <h2 class="display-md">Let's build something<br/><span class="text-accent">extraordinary.</span></h2>
+        </div>
+        <div class="cta-strip__actions reveal reveal-delay-2">
+          <a href="contact.html" class="btn btn--primary">
+            Get in Touch
+            <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="services.html" class="btn btn--outline">Our Services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <a href="index.html" class="footer__logo">GOAT<span>.</span></a>
+    <p class="footer__copy">© 2024 GOAT Studio. All rights reserved.</p>
+    <div class="footer__right">
+      <a href="https://www.instagram.com/goatwebstudio.dev/" target="_blank" rel="noopener" class="footer__social">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61590486805833" target="_blank" rel="noopener" class="footer__social">Facebook</a>
+      <a href="#top" class="footer__top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

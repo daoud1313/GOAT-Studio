@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact GOAT Studio — Start your premium web project. Based in Nador, Morocco. Always open." />
+  <title>Contact — GOAT Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+ <link rel="stylesheet" href="icon.png">
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+  <div class="page-transition active"></div>
+
+  <nav class="nav" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="nav__logo"><img src="logo.png" style="width:100px;"></a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"     class="nav__link">Home</a></li>
+      <li><a href="about.html"     class="nav__link">About</a></li>
+      <li><a href="services.html"  class="nav__link">Services</a></li>
+      <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+      <li><a href="contact.html"   class="nav__link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/212616280527" target="_blank" rel="noopener" class="nav__cta">Start Project</a>
+    <button class="nav__hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"     class="nav__link">Home</a>
+    <a href="about.html"     class="nav__link">About</a>
+    <a href="services.html"  class="nav__link">Services</a>
+    <a href="portfolio.html" class="nav__link">Portfolio</a>
+    <a href="contact.html"   class="nav__link">Contact</a>
+    <a href="https://wa.me/212616280527" target="_blank" rel="noopener" class="nav__cta">Start Project</a>
+  </div>
+
+  <main class="page-wrap">
+
+    <section class="section contact-hero" aria-label="Contact Header">
+      <p class="label reveal">Let's Build Together</p>
+      <h1 class="display-lg reveal reveal-delay-1">
+        Start a<br/><span class="text-accent">Project.</span>
+      </h1>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section contact-layout" aria-label="Contact Information">
+
+      <aside class="contact-info reveal">
+
+        <div class="contact-info__block">
+          <p class="contact-info__label">Email</p>
+          <a href="mailto:goatwebstudio.dev@gmail.com" class="contact-info__value contact-info__link">
+            goatwebstudio.dev@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-info__block">
+          <p class="contact-info__label">WhatsApp</p>
+          <a href="https://wa.me/212616280527" target="_blank" rel="noopener" class="contact-info__value contact-info__link">
+            +212 616 280 527
+          </a>
+        </div>
+
+        <div class="contact-info__block">
+          <p class="contact-info__label">Location</p>
+          <p class="contact-info__value">Nador, Morocco</p>
+        </div>
+
+        <div class="contact-info__block">
+          <p class="contact-info__label">Availability</p>
+          <div class="contact-info__status">
+            <span class="contact-info__dot" aria-hidden="true"></span>
+            <p class="contact-info__value">Always Open</p>
+          </div>
+        </div>
+
+        <div class="contact-info__social">
+          <a href="https://www.instagram.com/goatwebstudio.dev/" target="_blank" rel="noopener" class="contact-info__social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Instagram">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61590486805833" target="_blank" rel="noopener" class="contact-info__social-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook">
+              <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Facebook
+          </a>
+        </div>
+
+      </aside>
+
+      <div class="contact-form-wrap reveal reveal-delay-2">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" novalidate aria-label="Project Inquiry Form">
+
+          <input type="hidden" name="access_key" value="9722bfb4-5425-4829-b52b-d8b97238d97f">
+
+          <input type="hidden" name="subject" value="New Project Inquiry - GOAT Studio">
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="form-field">
+            <input
+              type="text"
+              id="cf-name"
+              name="name"
+              class="form-field__input"
+              autocomplete="name"
+              required
+              placeholder=" "
+            />
+            <label for="cf-name" class="form-field__label">Full Name</label>
+            <div class="form-field__line"></div>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="email"
+              id="cf-email"
+              name="email"
+              class="form-field__input"
+              autocomplete="email"
+              required
+              placeholder=" "
+            />
+            <label for="cf-email" class="form-field__label">Email Address</label>
+            <div class="form-field__line"></div>
+          </div>
+
+          <div class="form-field">
+            <select
+              id="cf-type"
+              name="project_type"
+              class="form-field__select"
+              required
+            >
+              <option value="" disabled selected></option>
+              <option value="Landing Pages Development">Landing Pages Development</option>
+<option value="Premium Business Websites">Premium Business Websites</option>
+<option value="Creative Portfolio Development">Creative Portfolio Development</option>
+<option value="Custom Modifications & Bug Fixes">Custom Modifications & Bug Fixes</option>
+            </select>
+            <label for="cf-type" class="form-field__label">Project Type</label>
+            <div class="form-field__line"></div>
+            <div class="form-field__arrow" aria-hidden="true">
+              <svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1L6 7L11 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <textarea
+              id="cf-message"
+              name="message"
+              class="form-field__textarea"
+              rows="5"
+              required
+              placeholder=" "
+            ></textarea>
+            <label for="cf-message" class="form-field__label">Tell Us About Your Project</label>
+            <div class="form-field__line"></div>
+          </div>
+
+          <button type="submit" class="contact-form__submit">
+            <span>Send Message</span>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 16L16 4M16 4H8M16 4V12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <a href="index.html" class="footer__logo">GOAT<span>.</span></a>
+    <p class="footer__copy">© 2024 GOAT Studio. All rights reserved.</p>
+    <div class="footer__right">
+      <a href="https://www.instagram.com/goatwebstudio.dev/" target="_blank" rel="noopener" class="footer__social">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61590486805833" target="_blank" rel="noopener" class="footer__social">Facebook</a>
+      <a href="#top" class="footer__top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

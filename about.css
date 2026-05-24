@@ -1,0 +1,239 @@
+/* =========================================================
+   ABOUT PAGE — Specific Styles
+   ========================================================= */
+
+/* -------------------------------------------------------
+   PAGE HEADER
+------------------------------------------------------- */
+.page-header {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(3rem, 8vw, 8rem) clamp(1.5rem, 7vw, 7rem) clamp(4rem, 8vw, 7rem);
+  overflow: hidden;
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.page-header__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.page-header__title {
+  margin-bottom: 2rem;
+}
+
+.page-header__sub {
+  max-width: 52ch;
+}
+
+/* Giant background letter */
+.page-header__deco {
+  position: absolute;
+  right: -0.05em;
+  bottom: -0.15em;
+  font-family: var(--font-display);
+  font-size: clamp(12rem, 30vw, 28rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.04);
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* -------------------------------------------------------
+   PHILOSOPHY
+------------------------------------------------------- */
+.philosophy {
+  background: var(--clr-bg);
+}
+
+.philosophy__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.philosophy__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.philosophy__para {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--clr-silver);
+  line-height: 1.9;
+}
+
+.philosophy__para strong {
+  color: var(--clr-white);
+  font-weight: 400;
+}
+
+.philosophy__values {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1rem;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.phil-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--clr-border);
+  transition: background var(--dur-fast);
+}
+
+.phil-value:last-child { border-bottom: none; }
+
+.phil-value:hover { background: var(--clr-surface-2); }
+
+.phil-value__key {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+}
+
+.phil-value__val {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--clr-white);
+  letter-spacing: 0.02em;
+}
+
+/* -------------------------------------------------------
+   TECH STACK
+------------------------------------------------------- */
+.tech-stack {
+  background: var(--clr-surface);
+}
+
+.tech-stack .label,
+.tech-stack .display-md {
+  margin-bottom: 1rem;
+}
+
+.tech-stack .display-md {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--clr-border);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.stack-card {
+  padding: clamp(1.8rem, 3vw, 2.8rem);
+  background: var(--clr-surface);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: background var(--dur) var(--ease);
+}
+
+.stack-card:hover {
+  background: var(--clr-surface-2);
+}
+
+.stack-card__icon {
+  width: 40px; height: 40px;
+  color: var(--clr-accent);
+  margin-bottom: 0.5rem;
+  transition: transform var(--dur) var(--ease);
+}
+
+.stack-card:hover .stack-card__icon {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.stack-card__name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-white);
+  letter-spacing: 0.02em;
+}
+
+.stack-card__desc {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--clr-silver);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.stack-card__level {
+  height: 2px;
+  background: var(--clr-border);
+  border-radius: 1px;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.stack-card__bar {
+  height: 100%;
+  width: var(--fill);
+  background: linear-gradient(90deg, var(--clr-accent), rgba(0,207,255,0.5));
+  border-radius: 1px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 1.2s var(--ease);
+}
+
+.stack-card.visible .stack-card__bar {
+  transform: scaleX(1);
+}
+
+.stack-card__pct {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--clr-accent);
+  align-self: flex-end;
+}
+
+/* -------------------------------------------------------
+   RESPONSIVE
+------------------------------------------------------- */
+@media (max-width: 900px) {
+  .philosophy__grid {
+    grid-template-columns: 1fr;
+  }
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+  .phil-value {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .page-header {
+    min-height: 70vh;
+  }
+}
