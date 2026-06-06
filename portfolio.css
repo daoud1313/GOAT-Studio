@@ -151,6 +151,11 @@
   transform: scale(1.03);
 }
 
+/* ربط خلفية المشروع الجديد: Dr. Teeth Dental Clinic */
+.proj-card__bg--00 {
+  background-image: url('screencapture-127-0-0-1-5500-index-html-2026-06-06-12_58_39.png');
+}
+
 /* ربط خلفية المشروع الأول: Le Greenz مع إضافة الامتداد المصحح .jpg */
 .proj-card__bg--01 {
   background-image: url('p2.png');
